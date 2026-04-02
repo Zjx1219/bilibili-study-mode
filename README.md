@@ -46,6 +46,7 @@
 ---
 
 ## 安装步骤
+###快速开始：https://raw.githubusercontent.com/Zjx1219/bilibili-study-mode/main/bilibili-study-mode.user.js
 
 ### 第一步：安装 Tampermonkey 扩展
 
