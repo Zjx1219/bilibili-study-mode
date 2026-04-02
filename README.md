@@ -36,12 +36,12 @@
 - 8种预设马卡龙渐变背景
 - 支持上传本地图片作为背景（自动压缩）
 - 可恢复默认背景
+<img width="2501" height="1533" alt="1775117168798" src="https://github.com/user-attachments/assets/a9c1efed-5045-43a4-abf6-48031ad57a34" />
+<img width="2501" height="1529" alt="1775119236616" src="https://github.com/user-attachments/assets/9e59b65c-d37c-4e9c-a822-e3a3a4541de0" />
+<img width="2501" height="1529" alt="1775117727919" src="https://github.com/user-attachments/assets/4495d653-f3d7-4a20-b68d-4b7244aedb33" />
+<img width="637" height="606" alt="1775119286389" src="https://github.com/user-attachments/assets/2262cb59-17c7-4061-9d67-9e88ac43d15e" />
+<img width="573" height="758" alt="1775119517741" src="https://github.com/user-attachments/assets/dc20d524-8dd8-4394-8499-466071b87769" />
 
-![1775117168798](https://file+.vscode-resource.vscode-cdn.net/d%3A/code/Bilibili/image/README/1775117168798.png)![1775119236616](https://file+.vscode-resource.vscode-cdn.net/d%3A/code/Bilibili/image/README/1775119236616.png)
-
-![1775117727919](https://file+.vscode-resource.vscode-cdn.net/d%3A/code/Bilibili/image/README/1775117727919.png)
-
-![1775119286389](https://file+.vscode-resource.vscode-cdn.net/d%3A/code/Bilibili/image/README/1775119286389.png)![1775119517741](image/README/1775119517741.png)
 
 ---
 
