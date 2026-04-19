@@ -803,9 +803,13 @@
             document.body.innerHTML = '';
             document.body.appendChild(this.container);
 
-            // 隐藏原页面滚动条相关的样式
+            // 确保页面可以滚动
             document.documentElement.style.overflow = 'auto';
+            document.documentElement.style.height = 'auto';
             document.body.style.overflow = 'auto';
+            document.body.style.height = 'auto';
+            document.body.style.overflowX = 'hidden';
+            document.body.style.overflowY = 'auto';
         }
 
         getTemplate() {
@@ -936,9 +940,21 @@
                     this.filterByTag(filterTag.dataset.tag);
                 }
             });
+
+            // 确保鼠标滚轮可以滚动页面
+            this.container.addEventListener('wheel', (e) => {
+                const delta = e.deltaY || e.wheelDeltaY || -e.detail;
+                if (delta) {
+                    document.body.scrollTop += delta * 0.5;
+                    document.documentElement.scrollTop += delta * 0.5;
+                }
+            }, { passive: true });
         }
 
         showEditTagsModal(bv) {
+            // 移除已存在的模态框，防止重复创建
+            document.querySelectorAll('.bsm-modal').forEach(m => m.remove());
+
             const video = Storage.getVideos().find(v => v.bv === bv);
             if (!video) return;
 
@@ -979,6 +995,9 @@
         }
 
         showBgModal() {
+            // 移除已存在的模态框，防止重复创建
+            document.querySelectorAll('.bsm-modal').forEach(m => m.remove());
+
             const currentBg = Storage.getBackground();
             const modal = document.createElement('div');
             modal.className = 'bsm-modal active';
@@ -1148,6 +1167,9 @@
         }
 
         showAddModal() {
+            // 移除已存在的模态框，防止重复创建
+            document.querySelectorAll('.bsm-modal').forEach(m => m.remove());
+
             const modal = document.createElement('div');
             modal.className = 'bsm-modal active';
             modal.innerHTML = `
